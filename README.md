@@ -60,20 +60,20 @@ Example:
 
 ```RDF/XML
 <prov:Activity rdf:about="http://localhost/api/about">
-    <rdfs:label xml:lang="en">Elevation Server API Process</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
-    <prov:wasAssociatedWith rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Organization/Muninn"/>
-    <foaf:name xml:lang="en">Elevation Server API Process</foaf:name>
-    <doap:Version>2.0</doap:Version>
-    <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
-    <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
-    <doap:service-endpoint rdf:resource="http://localhost/api"/>
-    <doap:developer rdf:resource="http://localhost/markfarrell"/>
-    <doap:homepage rdf:resource="http://localhost/"/>
-    <doap:blog rdf:resource="http://blog.muninn-project.org/"/>
-    <doap:description xml:lang="en">The Elevation Server API will ...</doap:description>
-    <cc:attributionName xml:lang="en">The Muninn Project</cc:attributionName>
-    <cc:attributionURL rdf:resource="http://www.muninn-project.org/"/>
+  <rdfs:label xml:lang="en">Elevation Server API Process</rdfs:label>
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
+  <prov:wasAssociatedWith rdf:resource="http://rdf.muninn-project.org/ww1/2011/11/11/Organization/Muninn"/>
+  <foaf:name xml:lang="en">Elevation Server API Process</foaf:name>
+  <doap:Version>2.0</doap:Version>
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+  <rdf:type rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+  <doap:service-endpoint rdf:resource="http://localhost/api"/>
+  <doap:developer rdf:resource="http://localhost/markfarrell"/>
+  <doap:homepage rdf:resource="http://localhost/"/>
+  <doap:blog rdf:resource="http://blog.muninn-project.org/"/>
+  <doap:description xml:lang="en">The Elevation Server API will ...</doap:description>
+  <cc:attributionName xml:lang="en">The Muninn Project</cc:attributionName>
+  <cc:attributionURL rdf:resource="http://www.muninn-project.org/"/>
 </prov:Activity>
 ```
