@@ -20,7 +20,7 @@ Permanent metadata hangs off the endpoint as a static document at ```http://.../
 Example:
 
 ```RDF/XML
-<prov:activity rdf:about="http://localhost/api/about">
+<prov:Activity rdf:about="http://localhost/api/about">
  <rdfs:label xml:lang="en">Elevation Server API Process</rdfs:label>
  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"\>
  <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Process"\>       
@@ -36,5 +36,5 @@ Example:
  <doap:description xml:lang="en">The Elevation Server API will ...</doap:description>
  <cc:attributionName xml:lang="en">The Muninn Project</cc:attributionName>
  <cc:attributionURL rdf:resource="http://www.muninn-project.org/">        
-</prov:activity>
+</prov:Activity>
 ```
