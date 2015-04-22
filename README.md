@@ -20,36 +20,36 @@ Example:
 
 ```RDF/XML
 <prov:Collection rdf:resource="http://localhost/answer/xx">
-    <rdf:type rdf:resource="void:Dataset"/>
-    <prov:wasGeneratedBy>
-        <prov:SoftwareAgent rdf:about="http://localhost/api/xx" >
-            <prov:wasGeneratedBy rdf:about="http://localhost/api/about" />
-            <rdfs:label xml:lang="en">Elevation Server API process ID xxxxx</rdfs:label>
-            <prov:startedAtTime>2014-07-14T01:01:01Z</prov:startedAtTime>
-            <prov:endedAtTime>2014-07-14T01:01:03Z</prov:endedAtTime>
-            <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/A"/>
-            <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/B"/>
-            <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/C"/>
-            <prov:SoftwareAgent>
-            </prov:wasGeneratedBy>
-            <prov:hadMember>
-                <!-- This point extracted from another dataset. -->
-                <geo:Point rdf:resource="http://localhost/answer/point/xx"/>
-                <geo:long>....</geo:long>
-                <geo:lat>....</geo:lat>
-                <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/A"/>
-            </geo:Point>
-        </prov:hadMember>
-        <prov:hadMember>
-            <!-- This point extracted inferred by an algorithm and another dataset. -->
-            <geo:Point rdf:resource="http://localhost/answer/point/xx"/>
-            <geo:long>....</geo:long>
-            <geo:lat>....</geo:lat>
-            <prov:wasGeneratedBy rdf:resource="http://localhost/api/xx"/>
-            <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/B"/>
-        </geo:Point>
-    </prov:hadMember>
-</prov:SoftwareAgent>undefined</prov:Collection>
+  <rdf:type rdf:resource="void:Dataset"/>
+  <prov:wasGeneratedBy>
+    <prov:SoftwareAgent rdf:about="http://localhost/api/xx" >
+      <prov:wasGeneratedBy rdf:about="http://localhost/api/about" />
+      <rdfs:label xml:lang="en">Elevation Server API process ID xxxxx</rdfs:label>
+      <prov:startedAtTime>2014-07-14T01:01:01Z</prov:startedAtTime>
+      <prov:endedAtTime>2014-07-14T01:01:03Z</prov:endedAtTime>
+      <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/A"/>
+      <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/B"/>
+      <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/C"/>
+    </prov:SoftwareAgent>
+  </prov:wasGeneratedBy>
+  <prov:hadMember>
+    <!-- This point extracted from another dataset. -->
+    <geo:Point rdf:resource="http://localhost/answer/point/xx">
+      <geo:long>....</geo:long>
+      <geo:lat>....</geo:lat>
+      <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/A"/>
+    </geo:Point>
+  </prov:hadMember>
+  <prov:hadMember>
+    <!-- This point extracted inferred by an algorithm and another dataset. -->
+    <geo:Point rdf:resource="http://localhost/answer/point/xx">
+      <geo:long>....</geo:long>
+      <geo:lat>....</geo:lat>
+      <prov:wasGeneratedBy rdf:resource="http://localhost/api/xx"/>
+      <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/B"/>
+    </geo:Point>
+  </prov:hadMember>
+</prov:Collection>
 ```
 
 ## Permanent Metadata
