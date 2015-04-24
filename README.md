@@ -1,16 +1,29 @@
 # Elevation Service Specification
 
-## Gross Specs
+## Gross Specification
 
 * Works through Apache.
-* If /proc/loadavg > 5, then return 503 Service Unavailable
-* Uses HTTP GET from an endpoint 'http://.../endpoint'
-
-* Arguments are BBOX=4.069061279296875,50.86924482345238,5.13885498046875,51.33661771600667 (Long1,Lat1,Long2,Lat2).
-* Arguments are Scale=x where x is the distance in meters between grid points.
-* Format Arguments are either: format=rdf,n3,png or controlled through 'Accept:' http header. Any error on this parameter is reported as "406 Not Acceptable".
+* If /proc/loadavg > 5 then return 503 Service Unavailable.
+* Uses HTTP GET from an endpoint 'http://.../endpoint'.
 * HTTP cache headers are based on the latest date of the data sources.
-* Source data has to be both STRM and other API's (TBD)
+
+## Data Sources 
+
+* [Nova Scotia DEM](http://novascotia.ca/natr/meb/download/dp055.asp)
+* [NYC DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc)
+* [Canadian Elevation Data API](http://geogratis.gc.ca/site/eng/elevation)
+* [SRTM](http://gis-lab.info/data/srtm-tif/)
+
+## Request Parameters
+
+| Name            | Description                        | Example                          | 
+| :-------------: | :--------------------------------: | :------------------------------: |
+| scale           | Distance in meters between points. | ```scale=1```                    |
+| bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` |
+| format          | ```rdf/xml|n3|xyz|png```           |   ```format=rdf/xml```           |
+| proj            | ```wgs84|utm```                    |   ```proj=wgs84```               |
+
+Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled through an HTTP ```Accept``` header. Any error on this parameter is reported as "406 Not Acceptable".
 
 ## Provenance Information
 
