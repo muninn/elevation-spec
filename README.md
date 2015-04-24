@@ -49,6 +49,7 @@ Example:
       <prov:wasInformedBy rdf:resource="http://localhost/api/datasets/B"/>
     </geo:Point>
   </prov:hadMember>
+  ...
 </prov:Collection>
 ```
 
