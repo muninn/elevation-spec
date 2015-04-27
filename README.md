@@ -20,7 +20,7 @@
 | :-------------: | :--------------------------------: | :------------------------------: |
 | scale           | Distance in meters between points. | ```scale=1```                    |
 | bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` |
-| format          | ```rdf/xml|n3|xyz|png```           |   ```format=rdf/xml```           |
+| format          | ```rdf/xml|n3|ntriples|xyz|png```  |   ```format=rdf/xml```           |
 | proj            | ```wgs84|utm```                    |   ```proj=wgs84```               |
 
 Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled through an HTTP ```Accept``` header. Any error on this parameter is reported as "406 Not Acceptable".
