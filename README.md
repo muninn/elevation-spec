@@ -18,7 +18,7 @@
 
 | Name            | Description                        | Example                          | 
 | :-------------: | :--------------------------------: | :------------------------------: |
-| scale           | ```scale=1-90m```                  | ```scale=1```                    |
+| scale           | ```1-90m```                        | ```scale=1```                    |
 | bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` |
 | format          | ```rdf/xml|n3|ntriples|xyz|png```  | ```format=rdf/xml```             |
 | proj            | ```wgs84|utm```                    | ```proj=wgs84```                 |
