@@ -9,21 +9,21 @@
 
 ## Data Sources 
 
+* [SRTM](http://gis-lab.info/data/srtm-tif/)
 * [Nova Scotia DEM](http://novascotia.ca/natr/meb/download/dp055.asp)
 * [NYC DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc)
 * [Canadian Elevation Data API](http://geogratis.gc.ca/site/eng/elevation)
-* [SRTM](http://gis-lab.info/data/srtm-tif/)
 
 ## Request Parameters
 
 | Name            | Description                        | Example                          | 
 | :-------------: | :--------------------------------: | :------------------------------: |
-| scale           | Distance in meters between points. | ```scale=1```                    |
+| scale           | ```scale=1-90m```                  | ```scale=1```                    |
 | bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` |
-| format          | ```rdf/xml|n3|ntriples|xyz|png```  |   ```format=rdf/xml```           |
-| proj            | ```wgs84|utm```                    |   ```proj=wgs84```               |
+| format          | ```rdf/xml|n3|ntriples|xyz|png```  | ```format=rdf/xml```             |
+| proj            | ```wgs84|utm```                    | ```proj=wgs84```                 |
 
-Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled through an HTTP ```Accept``` header. Any error on this parameter is reported as "406 Not Acceptable".
+Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled through an HTTP ```Accept``` header. Any error on this parameter is reported as ```406 Not Acceptable```.
 
 ## Provenance Information
 
