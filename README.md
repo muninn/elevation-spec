@@ -6,8 +6,8 @@
 | ------- | :----: |
 | Works through Apache. | Done |
 | Uses HTTP GET from an endpoint. | Done |
-| If /proc/loadavg > 5 then return ```503 Service Unavailable```. | Not Done |
-| HTTP cache headers are based on the latest date of the data sources. | Not Done |
+| If ```/proc/loadavg > 5``` then return ```503 Service Unavailable```. | Not Done |
+| HTTP cache headers are based on the latest date of the data sources.  | Not Done |
 
 ## Data Sources 
 
