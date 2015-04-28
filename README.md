@@ -2,26 +2,29 @@
 
 ## Gross Specification
 
-* Works through Apache.
-* If /proc/loadavg > 5 then return 503 Service Unavailable.
-* Uses HTTP GET from an endpoint 'http://.../endpoint'.
-* HTTP cache headers are based on the latest date of the data sources.
+| Feature | Status |
+| :-----: | :----: |
+| Works through Apache. | Done |
+| Uses HTTP GET from an endpoint. | Done |
+| If /proc/loadavg > 5 then return ```503 Service Unavailable``` | Not Done |
+| HTTP cache headers are based on the latest date of the data sources. | Not Done |
 
 ## Data Sources 
 
-* [SRTM](http://gis-lab.info/data/srtm-tif/)
-* [Nova Scotia DEM](http://novascotia.ca/natr/meb/download/dp055.asp)
-* [NYC DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc)
-* [Canadian Elevation Data API](http://geogratis.gc.ca/site/eng/elevation)
+| Source | Currently Included |
+| :----: | :----------------: |
+| [SRTM](http://gis-lab.info/data/srtm-tif/)                                                             | Yes |
+| [Nova Scotia DEM](http://novascotia.ca/natr/meb/download/dp055.asp)                                    | No |
+| [NYC DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc) | No |
+| [Canadian Elevation Data API](http://geogratis.gc.ca/site/eng/elevation)                               | No |
 
 ## Request Parameters
 
-| Name            | Description                        | Example                          | 
-| :-------------: | :--------------------------------: | :------------------------------: |
-| scale           | ```1-90m```                        | ```scale=1```                    |
-| bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` |
-| format          | ```rdf/xml|n3|ntriples|xyz|png```  | ```format=rdf/xml```             |
-| proj            | ```wgs84|utm```                    | ```proj=wgs84```                 |
+| Name            | Description                        | Example                          | Status   |
+| :-------------: | :--------------------------------: | :------------------------------: | :------: |
+| bbox            | ```minlong,minlat,maxlong,maxlat```| ```bbox=4.06,50.86,5.13,51.33``` | Done     |
+| format          | ```rdf/xml|n3|ntriples|xyz|png```  | ```format=rdf/xml```             | Done     |
+| scale           | Distance between points in metres. | ```scale=1```                    | Not Done |
 
 Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled through an HTTP ```Accept``` header. Any error on this parameter is reported as ```406 Not Acceptable```.
 
