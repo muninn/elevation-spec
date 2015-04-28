@@ -3,7 +3,7 @@
 ## Gross Specification
 
 | Feature | Status |
-| :-----: | :----: |
+| ------- | :----: |
 | Works through Apache. | Done |
 | Uses HTTP GET from an endpoint. | Done |
 | If /proc/loadavg > 5 then return ```503 Service Unavailable``` | Not Done |
@@ -11,8 +11,8 @@
 
 ## Data Sources 
 
-| Source | Currently Included |
-| :----: | :----------------: |
+| Source   | Currently Included |
+| :------: | :----------------: |
 | [SRTM](http://gis-lab.info/data/srtm-tif/)                                                             | Yes |
 | [Nova Scotia DEM](http://novascotia.ca/natr/meb/download/dp055.asp)                                    | No |
 | [NYC DEM](https://data.cityofnewyork.us/City-Government/1-foot-Digital-Elevation-Model-DEM-/dpc8-z3jc) | No |
