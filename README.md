@@ -32,6 +32,8 @@ Note: format arguments are either ```format=rdf/xml|n3|xyz|png``` or controlled 
 
 RDF Provenance information has to be created for each data source.
 
+Status: Not Done
+
 Example:
 
 ```RDF/XML
@@ -72,6 +74,8 @@ Example:
 ## Permanent Metadata
 
 Permanent metadata hangs off the endpoint as a static document at ```http://.../endpoint/about```.
+
+Status: Not done
 
 Example:
 
